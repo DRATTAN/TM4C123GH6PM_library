@@ -1,6 +1,6 @@
-#include "LIB_INCLUDE.h"
-#include "PERI_INCLUDE.h"
-#include "STRUCT_INCLUDE.h"
+#include "LIB_INCLUDE.h"        //MCU外设库
+#include "PERI_INCLUDE.h"       //常用模块库
+#include "STRUCT_INCLUDE.h"     //数据结构库
 
 int main(void)
 {
