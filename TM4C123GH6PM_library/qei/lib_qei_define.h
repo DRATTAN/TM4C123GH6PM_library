@@ -1,0 +1,19 @@
+/*
+ * lib_qei_define.h
+ *
+ *  Created on: 2023/05/24
+ *      Author: RATTAN
+ */
+
+#ifndef EK_TM4C123GXL_LIB_QEI_LIB_QEI_DEFINE_H_
+#define EK_TM4C123GXL_LIB_QEI_LIB_QEI_DEFINE_H_
+
+#define SYSCTL_PERIPH_QEI_BASE SYSCTL_PERIPH_QEI0
+#define QEI_BASE QEI0_BASE
+
+
+
+#define QEI0 0x00000000
+#define QEI1 0x00000001
+
+#endif /* EK_TM4C123GXL_LIB_QEI_LIB_QEI_DEFINE_H_ */
