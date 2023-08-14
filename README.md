@@ -1,6 +1,6 @@
 EK-TM4C123GXL_LIB
 
-EK-TM4C123GXL_LIB 是一个针对 CCs 平台 (Code Composer Studio) 以及 TI (德州仪器) 的 "Tiva Peripheral Driver Library" 库进行二次封装的开源项目。该项目旨在为 EK-TM4C123GH6PM 单片机上的外设（如 ADC、I2C、PWM、UART 等）提供快速配置，方便大学竞赛的同学们学习和使用。
+EK-TM4C123GXL_LIB 是一个针对 CCS 平台 (Code Composer Studio) 以及 TI (德州仪器) 的 "Tiva Peripheral Driver Library" 库进行二次封装的开源项目。该项目旨在为 EK-TM4C123GH6PM 单片机上的外设（如 ADC、I2C、PWM、UART 等）提供快速配置，方便同学们学习和竞赛中快速部署一个项目。
 
 主要特性
 对 Tiva Peripheral Driver Library 进行二次封装，简化外设配置过程
@@ -22,6 +22,6 @@ EK-TM4C123GXL_LIB 是一个针对 CCs 平台 (Code Composer Studio) 以及 TI (�
 作者：DRATTAN
 邮箱：zhanyu981@gmail.com
 学校：陕西理工大学
-项目主页：https://github.com/DRATTAN/EK-TM4C123GXL_LIB
+项目主页：https://github.com/DRATTAN/TM4C123GH6PM_library
 如果您在使用过程中遇到问题，或者有其他相关事宜需要联系作者，请通过上述邮箱与我取得联系。同时，我们也非常欢迎对该项目的任何建议和反馈。
 
