@@ -61,7 +61,7 @@ void DS_FreeLinkListBodyAll(LinkListBody * pbody)
     }
 }
 
-LinkListHeader *DS_CreateLinkList(uint32_t length)
+LinkList DS_CreateLinkList(uint32_t length)
 {
     LinkListBody *pbody = NULL;
     LinkListHeader *pheader = NULL;
@@ -72,7 +72,7 @@ LinkListHeader *DS_CreateLinkList(uint32_t length)
     if(pheader -> bodyPoint == NULL)
     {
         DS_FreeLinkListHeader(pheader);
-        return 0;
+        return NULL;
     }
     (pheader -> length) += 1;
     pbody = pheader -> bodyPoint;
