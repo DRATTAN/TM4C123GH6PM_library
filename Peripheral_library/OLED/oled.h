@@ -18,32 +18,32 @@
 #define Oled_Addr 0x78 >> 1
 #define I2C_NUM I2C0
 
-#ifndef __cplusplus
-/*
- * Oled字符显示库增基于C11:_Generic关键字对轻量泛型的支持,优化了显示函数调用的逻辑,使用Oled_Show()函数可自动根据参数类型
- * 选择合适的显示函数
- */
-#define Oled_Show(x, y, _var_) _Generic((_var_), \
-                                         uint32_t: Oled_ShowUint32, \
-                                         int32_t: Oled_ShowInt32, \
-                                         uint16_t: Oled_ShowUint16, \
-                                         int16_t: Oled_ShowInt16, \
-                                         uint8_t: Oled_ShowUint8, \
-                                         int8_t: Oled_ShowUint8, \
-                                         float: Oled_ShowFloat, \
-                                         char: Oled_ShowChar, \
-                                         const char: Oled_ShowChar, \
-                                         char*: Oled_ShowString, \
-                                         const char*: Oled_ShowString, \
-                                         uint8_t*: Oled_ShowString, \
-                                         const uint8_t*: Oled_ShowString, \
-                                         int8_t*: Oled_ShowString, \
-                                         const int8_t*:Oled_ShowString)((x), (y), (_var_))
-
-#define Oled_ShowParam(x, y, param_name, _var_) ({Oled_Show(x, y, param_name); \
-                                                  Oled_Show(x + strlen(param_name)*6, y, _var_);})
-
-#endif
+//#ifndef __cplusplus
+///*
+// * Oled字符显示库增基于C11:_Generic关键字对轻量泛型的支持,优化了显示函数调用的逻辑,使用Oled_Show()函数可自动根据参数类型
+// * 选择合适的显示函数
+// */
+//#define Oled_Show(x, y, _var_) _Generic((_var_), \
+//                                         uint32_t: Oled_ShowUint32, \
+//                                         int32_t: Oled_ShowInt32, \
+//                                         uint16_t: Oled_ShowUint16, \
+//                                         int16_t: Oled_ShowInt16, \
+//                                         uint8_t: Oled_ShowUint8, \
+//                                         int8_t: Oled_ShowUint8, \
+//                                         float: Oled_ShowFloat, \
+//                                         char: Oled_ShowChar, \
+//                                         const char: Oled_ShowChar, \
+//                                         char*: Oled_ShowString, \
+//                                         const char*: Oled_ShowString, \
+//                                         uint8_t*: Oled_ShowString, \
+//                                         const uint8_t*: Oled_ShowString, \
+//                                         int8_t*: Oled_ShowString, \
+//                                         const int8_t*:Oled_ShowString)((x), (y), (_var_))
+//
+//#define Oled_ShowParam(x, y, param_name, _var_) ({Oled_Show(x, y, param_name); \
+//                                                  Oled_Show(x + strlen(param_name)*6, y, _var_);})
+//
+//#endif
 
 #ifdef __cplusplus
 extern "C" {
