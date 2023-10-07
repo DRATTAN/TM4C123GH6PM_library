@@ -10,7 +10,7 @@
 	<rts value="libc.a"/>
 	<createSlaveProjects value=""/>
 	<filesToOpen value=""/>
-	<origin value="C:/Users/RATTAN/Desktop/ccs workspace/EK-TM4C123GXL_LIB"/>
+	<origin value="C:/Users/RATTAN/Desktop/TM4C123GH6PM_library"/>
 	<isTargetManual value="true"/>
 	<sourceLookupPath value=""/>
 </projectOptions>
